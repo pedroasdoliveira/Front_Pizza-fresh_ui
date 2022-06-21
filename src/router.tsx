@@ -1,3 +1,4 @@
+import Home from "pages/Home/home"
 import { Route, Routes } from "react-router-dom"
 import { RoutesPath } from "types/routes"
 
