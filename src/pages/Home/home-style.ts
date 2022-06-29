@@ -51,6 +51,7 @@ export const HomeHeaderDetailsSearch = styled.div`
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
+    margin-bottom: .6rem;
     input {
       background: transparent;
       border: none;
