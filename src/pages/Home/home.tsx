@@ -1,9 +1,12 @@
 import * as Style from "./home-style";
 import { DateTime } from "luxon";
 import {ReactComponent as Search} from 'assets/icons/search.svg'
-import Menu from '../../components/Menu/menu'
+import Menu from '../../components/Menu/menu';
+import ProductItemList from "components/ProductItemList/Product";
+import ProductItem from "components/ProductItem/ProductItem";
 import { RoutesPath } from "types/routes";
 import { navigationItems } from "data/navigation";
+import OrderDetails from "components/OrderDetails/OrderDetails";
 
 const home = () => {
   const dateDescription = DateTime.now().toLocaleString({...DateTime.DATE_SHORT, weekday: 'long'});
@@ -36,12 +39,17 @@ const home = () => {
           </Style.HomeProductTitle>
           <Style.HomeProductList>
             <p>Lista de produtos aqui</p>
+
+            <ProductItemList>
+              <ProductItem />
+            </ProductItemList>
+
           </Style.HomeProductList>
         </div>
       </Style.HomeContent>
 
       <aside>
-        <p>Detalhes dos pedidos aqui</p>
+        <OrderDetails />
       </aside>
     </Style.Home>
   )

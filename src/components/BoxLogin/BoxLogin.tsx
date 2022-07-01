@@ -1,5 +1,6 @@
 import * as Style from './BoxLogin-style'
 import Logo from 'assets/logo_patterns/logo.png'
+import ButtonLarge from 'components/ButtonLarge'
 
 const BoxLogin = () => {
   return (
@@ -16,6 +17,8 @@ const BoxLogin = () => {
             <input type="text" placeholder='Digite o seu nome' />
 
             <input type="password" placeholder='Digite sua senha'/>
+
+            <ButtonLarge value="Entrar" type='button' />
         </Style.BoxLoginForm>
     </Style.BoxLogin>
   )
